@@ -15,7 +15,11 @@ func (q *Queue) Enqueue(name string) {
 	if q.Head == nil {
 		q.Head = &node
 	} else {
-		q.Head.Next = &node
+		curr := q.Head
+		for curr.Next != nil {
+			curr = curr.Next
+		}
+		curr.Next = &node
 	}
 }
 

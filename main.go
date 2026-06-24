@@ -5,9 +5,9 @@ import "fmt"
 func main() {
 	queue := Queue{}
 
-	queue.Enqueue("Heitor")
-	queue.Enqueue("Golang")
-	queue.Enqueue("Counter-Strike")
+	queue.Enqueue("Learning Golang")
+	queue.Enqueue("Studying Data Structure")
+	queue.Enqueue("Playing Counter-Strike")
 
 	fmt.Println(queue.Dequeue())
 	fmt.Println(queue.Dequeue())
